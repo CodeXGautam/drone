@@ -258,7 +258,7 @@ import { Search, Facebook, Twitter, Linkedin } from "lucide-react";
 const TeamMemberCard = ({ member }) => (
   <div className="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
     <img
-      src={member.imageUrl}
+      src={`${process.env.PUBLIC_URL}${member.imageUrl}`}
       alt={member.name}
       className="w-[32%] h-full rounded-lg object-cover"
     />
@@ -434,7 +434,7 @@ const DoraStaff = () => {
             <img
               className="h-[200px] md:h-[320px] w-[160px] md:w-[260px]"
               // src={RDGIMG}
-              src="RD.jpg"
+              src={`${process.env.PUBLIC_URL}/RD.jpg`}
               alt="DORA"
             />
           </div>
