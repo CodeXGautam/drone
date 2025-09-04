@@ -2,13 +2,13 @@ import { label } from "framer-motion/client";
 import React, { useEffect, useState } from "react";
 import { FaFacebookF, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { href, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
   
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
-  { href: "contact-us", label: "Contact Us" },
+  { href: "/contact-us", label: "Contact Us" },
 ];
 
 const Header = () => {
@@ -182,25 +182,25 @@ const [index, setIndex] = useState(0);
                     {openDropdown === item.key && (
                       <div className="absolute top-full left-0 mt-2 w-48 rounded-md bg-white text-slate-800 shadow-lg">
                         {item.links.map((link) => (
-                          <a
+                          <Link
                             key={link.label}
-                            href={link.href}
+                            to={link.href}
                             className="block px-3 py-2 hover:bg-slate-100 rounded-md"
                           >
                             {link.label}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     )}
                   </div>
                 ) : (
-                  <a
+                  <Link
                     key={item.label}
-                    href={item.href}
+                    to={item.href}
                     className="hover:text-blue-300"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 )
               )}
             </div>
@@ -355,25 +355,27 @@ const [index, setIndex] = useState(0);
                     {openMobileSection === item.key && (
                       <div className="ml-3 space-y-1 pb-2">
                         {item.links.map((link) => (
-                          <a
+                          <Link
                             key={link.label}
-                            href={link.href}
+                            to={link.href}
                             className="block rounded px-3 py-2 text-white/90 hover:bg-white/10"
+                            onClick={() => setIsMenuOpen(false)}
                           >
                             {link.label}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     )}
                   </div>
                 ) : (
-                  <a
+                  <Link
                     key={item.label}
-                    href={item.href}
+                    to={item.href}
                     className="mt-1 block rounded-md px-3 py-3 hover:bg-white/10"
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 )
               )}
             </nav>
