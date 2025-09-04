@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/drone/static/css/main.7ed3bdb4.css",
+    "main.js": "/drone/static/js/main.c7dc0173.js",
+    "index.html": "/drone/index.html",
+    "main.7ed3bdb4.css.map": "/drone/static/css/main.7ed3bdb4.css.map",
+    "main.c7dc0173.js.map": "/drone/static/js/main.c7dc0173.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ed3bdb4.css",
+    "static/js/main.c7dc0173.js"
+  ]
+}
