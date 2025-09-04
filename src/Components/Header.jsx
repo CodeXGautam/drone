@@ -113,7 +113,7 @@ const [index, setIndex] = useState(0);
           <div className="h-16 flex items-center justify-between">
             <div className="flex items-center gap-4">
               <img
-                src="/iitr_.svg"
+                src={`${process.env.PUBLIC_URL}/iitr_.svg`}
                 alt="IIT Roorkee Logo"
                 className="h-16 w-16   text-white"
               />
@@ -273,7 +273,7 @@ const [index, setIndex] = useState(0);
             <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
               <div className="flex items-center gap-3">
                 <img
-                  src="/iitr_logo.png"
+                  src={`${process.env.PUBLIC_URL}/iitr_logo.png`}
                   alt="IIT Roorkee Logo"
                   className="h-8 w-8"
                 />
@@ -409,7 +409,7 @@ const [index, setIndex] = useState(0);
         <div
           className="absolute inset-0 w-full h-full"
           style={{
-            backgroundImage: "url('/front.jpeg')",
+            backgroundImage: `url('${process.env.PUBLIC_URL}/front.jpeg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
