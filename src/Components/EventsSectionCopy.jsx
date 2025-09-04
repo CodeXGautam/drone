@@ -14,7 +14,7 @@ const EventsSection = () => {
       id: 1,
       title: "Drone Innovation for Sustainability",
       spon: "Sponsor by : American Express",
-      image: "/dji3.jpg",
+      image: `${process.env.PUBLIC_URL}/dji3.jpg`,
       link: "/american-express",
     },
     {
@@ -22,7 +22,7 @@ const EventsSection = () => {
       title:
         "Empowering Rural Communities: Sustainable Planing for Futrue Development in Meerpur and Beladi-Salhapur Villages, Haridwar, Uttarakhand",
       spon: "Sponsor by : NHPC Limited",
-      image: "/dji2.webp",
+      image: `${process.env.PUBLIC_URL}/dji2.webp`,
       link: "/nhpc",
     },
     // {
