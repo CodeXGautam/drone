@@ -95,7 +95,7 @@ const GivingBack = () => {
             {/* Image */}
             <div className="w-full">
               <img
-                src="/giveback.jpg"
+                src={`${process.env.PUBLIC_URL}/giveback.jpg`}
                 alt="People working on laptops"
                 className="rounded-md shadow w-full object-cover"
               />
