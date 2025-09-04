@@ -26,7 +26,7 @@ function App() {
              
 
                 {/* 404 Route */}
-                {/* <Route path="*" element={<Home/>} /> */}
+                <Route path="*" element={<AmericanExpress/>} />
             </Routes>
             <Footer />
         </div>
