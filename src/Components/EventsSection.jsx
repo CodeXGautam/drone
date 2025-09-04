@@ -46,10 +46,10 @@ const EventsSection = () => {
                         {/* Image Section */}
                         <div className="w-full h-56 bg-white flex items-center justify-center rounded-b-md overflow-hidden">
                             <img
-                                src={event.image || "/default-event.png"}
+                                src={event.image || `${process.env.PUBLIC_URL}/default-event.png`}
                                 alt={event.title}
                                 onError={(e) =>
-                                    (e.currentTarget.src = "/default-event.png")
+                                    (e.currentTarget.src = `${process.env.PUBLIC_URL}/default-event.png`)
                                 }
                                 className="w-full h-full object-cover"
                             />

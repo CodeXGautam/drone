@@ -45,7 +45,7 @@ const EventsSection = () => {
             <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-md overflow-hidden bg-gray-200">
               {/* Replace with actual image src */}
               <img
-                src="/images/dean.jpg"
+                src={`${process.env.PUBLIC_URL}/RD.jpg`}
                 alt="Prof. R. D. Garg"
                 className="h-full w-full object-cover"
               />
@@ -106,9 +106,9 @@ const EventsSection = () => {
             className="relative bg-white shadow-md rounded-md overflow-hidden text-center hover:shadow-lg transition"
           >
             <img
-              src={event.image || "/default-event.png"}
+              src={event.image || `${process.env.PUBLIC_URL}/default-event.png`}
               alt={event.title}
-              onError={(e) => (e.currentTarget.src = "/default-event.png")}
+              onError={(e) => (e.currentTarget.src = `${process.env.PUBLIC_URL}/default-event.png`)}
               className="w-full h-full object-cover absolute inset-0"
             />
 
@@ -136,9 +136,9 @@ const EventsSection = () => {
             >
               {/* Background Image */}
               <img
-                src={event.image || "/default-event.png"}
+                src={event.image || `${process.env.PUBLIC_URL}/default-event.png`}
                 alt={event.title}
-                onError={(e) => (e.currentTarget.src = "/default-event.png")}
+                onError={(e) => (e.currentTarget.src = `${process.env.PUBLIC_URL}/default-event.png`)}
                 className="w-full h-full object-cover absolute inset-0 z-0 transform group-hover:scale-110 transition-transform duration-300 opacity-55 group-hover:opacity-100"
               />
 
