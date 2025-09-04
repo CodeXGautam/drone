@@ -9,14 +9,14 @@ const Nhpc = () => {
       id: 1,
       title: "Village Beladi-Salhapur, Haridwar, Uttarakhand",
       // spon: "",
-      image: "/drone_agri.jpg",
+      image: `${process.env.PUBLIC_URL}/drone_agri.jpg`,
       link:"/american-express"
     },
     {
       id: 2,
       title: "Village Meerpur, Haridwar, Uttarakhand",
       spon: "Sponsor by : NHPC Limited",
-      image: "/sus_dev.jpg",
+      image: `${process.env.PUBLIC_URL}/sus_dev.jpg`,
       link:"/nhpc"
     }
   ];
@@ -39,9 +39,9 @@ const Nhpc = () => {
             >
               {/* Image as background */}
               <img
-                src={event.image || "/default-event.png"}
+                src={event.image || `${process.env.PUBLIC_URL}/default-event.png`}
                 alt={event.title}
-                onError={(e) => (e.currentTarget.src = "/default-event.png")}
+                onError={(e) => (e.currentTarget.src = `${process.env.PUBLIC_URL}/default-event.png`)}
                 className="w-full h-full object-cover absolute inset-0"
               />
 
@@ -83,7 +83,7 @@ const Nhpc = () => {
         <div className="bg-gray-800 text-white text-center p-6">
   <p>Implemented by</p>
   <div className="flex justify-center w-32 mx-auto">
-    <img src="/iitr_.svg" alt="IITR Logo" className=""/>
+    <img src={`${process.env.PUBLIC_URL}/iitr_.svg`} alt="IITR Logo" className=""/>
   </div>
   <p>भारतीय प्रौद्योगिकी संस्थान रुड़की</p>
   <p>Indian Institute of Technology, Roorkee</p>
