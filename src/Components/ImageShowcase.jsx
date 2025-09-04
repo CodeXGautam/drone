@@ -2,21 +2,21 @@ import React, { useEffect, useState } from "react";
 
 const ImageShowcase = () => {
     const images = [
-        "/1.jpeg",
-        "/2.jpeg",
-        "/4.jpeg",
-        "/5.jpeg",
-        "/6.jpeg",
-        "/7.jpeg",
-        "/8.jpeg",
-        "/9.jpeg",
-        "/10.jpeg",
-        "/11.jpeg",
-        "/12.jpg",
-        "/13.jpg",
-        "/14.jpg",
-        "/15.jpeg",
-        "/16.jpeg",
+        `${process.env.PUBLIC_URL}/1.jpeg`,
+        `${process.env.PUBLIC_URL}/2.jpeg`,
+        `${process.env.PUBLIC_URL}/4.jpeg`,
+        `${process.env.PUBLIC_URL}/5.jpeg`,
+        `${process.env.PUBLIC_URL}/6.jpeg`,
+        `${process.env.PUBLIC_URL}/7.jpeg`,
+        `${process.env.PUBLIC_URL}/8.jpeg`,
+        `${process.env.PUBLIC_URL}/9.jpeg`,
+        `${process.env.PUBLIC_URL}/10.jpeg`,
+        `${process.env.PUBLIC_URL}/11.jpeg`,
+        `${process.env.PUBLIC_URL}/12.JPG`,
+        `${process.env.PUBLIC_URL}/13.JPG`,
+        `${process.env.PUBLIC_URL}/14.JPG`,
+        `${process.env.PUBLIC_URL}/15.jpeg`,
+        `${process.env.PUBLIC_URL}/16.jpeg`,
     ];
 
     const [index, setIndex] = useState(0);
