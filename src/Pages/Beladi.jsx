@@ -108,19 +108,19 @@ const Beladi = () => {
 
       <div className="w-2/3 h-full relative">
         <img
-          src="/about-us-bg.png"
+          src={`${process.env.PUBLIC_URL}/about-us-bg.png`}
           alt="Background"
           className="w-full h-full object-cover object-right"
         />
 
         <img
-          src="/auperson1.png"
+          src={`${process.env.PUBLIC_URL}/auperson1.png`}
           alt="Person 1"
           className="absolute top-20 left-48 w-52 h-56 object-cover shadow-lg"
         />
 
         <img
-          src="/auperson2.png"
+          src={`${process.env.PUBLIC_URL}/auperson2.png`}
           alt="Person 2"
           className="absolute bottom-20 left-96 w-56 h-60 object-cover shadow-lg"
         />
